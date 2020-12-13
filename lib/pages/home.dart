@@ -9,15 +9,14 @@ class _HomeState extends State<Home> {
 
   Map data = {};
 
-
-
   @override
   Widget build(BuildContext context) {
 
-    //we will get the actual arguments we have received from location file
+    //the below setState function will rebuild this build function and the value of data is also changed
     //writing this ternary condition, so that when it pop back off, we don't want to overwrite the
-    //data with initial data(we want to keep with what we just updated with)
+    //data with initial data(data from loading.dart)(we want to keep with what we just updated with)
     data = data.isNotEmpty ? data : ModalRoute.of(context).settings.arguments;//this will return a map of data
+    //ModalRoute.of(context).settings.arguments : no explanation(it's the thing we got from loading.dart)
     //print(data);
 
     //set background
@@ -61,6 +60,7 @@ class _HomeState extends State<Home> {
                     We can think it as a async task:going to another screen, choosing the data and coming here with the data
                     make onPressed as async
                      */
+                    //since we don't know the datatype, we used dynamic as the return type
                     dynamic result = await Navigator.pushNamed(context, '/location');    //1st param:context object, 2nd: name of route
                                                                                          //the return is a map
                     //now with setState we can update the data

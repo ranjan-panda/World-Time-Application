@@ -41,7 +41,7 @@ Stateful widget has couple of lifecycle methods:
 -called only once when the widget is created
 
 #Build()
--
+-build is triggered every time we use setState()
 
 Dispose()
 -when the widget/state object is removed

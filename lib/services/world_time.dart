@@ -23,7 +23,7 @@ class WorldTime{
 
       String offsetHours = offset.substring(0,1) + offset.substring(2,3);
       String offsetMin = offset.substring(0,1) + offset.substring(4,6);
-
+      //create DateTime object
       DateTime now = DateTime.parse(datetime);
       now = now.add(Duration(hours: int.parse(offsetHours), minutes: int.parse(offsetMin)));
 
@@ -31,8 +31,8 @@ class WorldTime{
       //time= now.toString();
 
       isDaytime = now.hour > 6 && now.hour < 20 ? true : false;
-      //to format date and time in nicer way, import the intl package
-      time = DateFormat.jm().format(now);
+      //to format date and time in nicer way, import the intl package and add it in pubspec.yaml as well
+      time = DateFormat.jm().format(now);//no explanation for this line
     }
     catch(e) {//e is the error object based on the error
       print('Caught error: $e');
