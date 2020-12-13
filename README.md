@@ -15,4 +15,4 @@ Flutter application which shows time of any location across the globe in real ti
 
 ### Time with the chosen location is shown in the screen. Also the background image adjusts whether it is day or night in the location.
 
-<img src="screenshots/4.png" height="600">&nbsp;&nbsp;&nbsp;<img src="screenshots/5.png" height="600">&nbsp;&nbsp;&nbsp;<img src="screenshots/6.png" height="600">
+<img src="screenshots/4.png" height="500">&nbsp;&nbsp;&nbsp;<img src="screenshots/5.png" height="500">&nbsp;&nbsp;&nbsp;<img src="screenshots/6.png" height="500">
